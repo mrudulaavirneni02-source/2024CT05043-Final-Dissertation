@@ -1,0 +1,17 @@
+.venv/
+node_modules/
+dist/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+logs/*.log
+storage/chroma/*
+storage/bm25/*
+storage/uploads/*
+storage/incoming/*
+!storage/chroma/.gitkeep
+!storage/bm25/.gitkeep
+!storage/uploads/.gitkeep
+.env.local

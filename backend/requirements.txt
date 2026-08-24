@@ -1,0 +1,34 @@
+fastapi==0.115.6
+uvicorn[standard]==0.32.1
+python-multipart==0.0.20
+pydantic-settings==2.10.1
+python-dotenv==1.0.1
+loguru==0.7.3
+httpx==0.28.1
+pymupdf==1.25.1
+pytesseract==0.3.13
+pillow==11.1.0
+pandas==2.2.3
+openpyxl==3.1.5
+xlrd==2.0.1
+chromadb==1.5.9
+sentence-transformers==3.3.1
+transformers==4.46.3
+tokenizers==0.20.3
+huggingface-hub==0.26.5
+rank-bm25==0.2.2
+numpy==2.2.1
+scikit-learn==1.6.0
+pytest==8.3.4
+pytest-asyncio==0.25.0
+ruff==0.8.4
+python-docx==1.1.2
+# Ragas 0.4 still imports the LangChain Vertex compatibility classes.  Keep the
+# LangChain packages on their mutually compatible 0.3 line until Ragas removes
+# that import, and use the Ollama integration for the application's local LLM.
+ragas==0.4.3
+langchain==0.3.27
+langchain-community==0.3.31
+langchain-core==0.3.80
+langchain-openai==0.3.35
+langchain-ollama==0.3.10

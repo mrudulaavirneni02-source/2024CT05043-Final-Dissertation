@@ -1,0 +1,44 @@
+Title: Intelligent Knowledge Extraction from Unstructured Multimodal Data using RAG-based Evaluation Frameworks
+
+Student: Avirneni Mrudula
+BITS ID: 2024CT05043
+Degree Program: AIML
+Research Area: Artificial Intelligence
+Institution: Birla Institute of Technology & Science, Pilani
+Project Location: Cognizant Technology Systems, Hyderabad
+Date: May 2026
+
+Broad Area of Work:
+The proposed dissertation falls under the domains of Artificial Intelligence, Machine Learning, Generative AI, Natural Language Processing, Information Retrieval, and Retrieval-Augmented Generation systems. The project focuses on developing an intelligent framework for extracting knowledge from unstructured multimodal data sources such as PDF documents, audio recordings, and video content. The framework leverages open-source technologies to perform data ingestion, transcription, semantic retrieval, contextual question answering, and evaluation of generated responses. The study also investigates and compares vector-based and vectorless retrieval approaches to determine their effectiveness in knowledge extraction applications.
+
+Background:
+Organizations continuously generate large volumes of unstructured information through documents, reports, presentations, audio recordings, meeting discussions, and video content. Although these data sources contain valuable organizational knowledge, extracting useful information from them remains challenging due to heterogeneous formats and lack of structured organization. Traditional keyword-based search systems often fail to capture the semantic meaning of user queries, resulting in incomplete or irrelevant retrieval. Recent advancements in Retrieval-Augmented Generation combine information retrieval techniques with Large Language Models to improve contextual understanding and answer generation. However, the effectiveness of different retrieval mechanisms for multimodal enterprise data remains an active research area.
+
+The dissertation proposes the development of an intelligent framework capable of processing and retrieving knowledge from PDF documents, audio files, and video content using open-source technologies. The framework compares semantic vector-based retrieval methods with traditional vectorless retrieval approaches and evaluates their effectiveness using standardized RAG evaluation metrics. The study aims to identify reliable techniques for building scalable and trustworthy enterprise knowledge systems.
+
+Objectives:
+1. Develop a unified knowledge extraction framework capable of processing multimodal unstructured data.
+2. Extract textual content from PDF, audio, and video sources using open-source tools.
+3. Generate semantic representations of extracted content using transformer-based embedding models.
+4. Implement and compare vector-based retrieval using ChromaDB or FAISS with vectorless retrieval using BM25.
+5. Integrate retrieval mechanisms with Large Language Models for contextual question answering.
+6. Evaluate retrieval and generation performance using RAGAS and DeepEval frameworks.
+7. Establish quality-control mechanisms for improving reliability and reducing hallucinations in generated responses.
+8. Identify best practices for scalable enterprise RAG implementations.
+
+Requested implementation scope for this software project:
+This project implements the dissertation framework for PDF and Excel files. It provides ingestion, text cleaning, chunking, metadata enrichment, ChromaDB vector retrieval, BM25 keyword retrieval, hybrid search, local Ollama answer generation, and lightweight evaluation hooks. Audio and video processing are represented in the dissertation source material but are intentionally outside the requested implementation scope.
+
+Scope of Work:
+The system supports collection and preparation of unstructured datasets; extraction of textual content from PDF documents; extraction of tabular content from Excel files; cleaning, preprocessing, metadata enrichment, and document chunking; embedding generation using Sentence Transformers; vector-based retrieval using ChromaDB; vectorless retrieval using BM25 indexing; a Retrieval-Augmented Generation pipeline using open-source LLMs such as Llama 3, Mistral, or Gemma through Ollama; semantic search and contextual question answering; comparative analysis of vector and vectorless retrieval techniques; quality-control and error-handling mechanisms; and a prototype user interface for querying the knowledge repository.
+
+Retrieval Approaches:
+Semantic vector retrieval flow: Document -> Text Extraction -> Cleaning -> Chunking -> Embedding -> ChromaDB -> Similarity Search -> LLM.
+Vectorless retrieval flow: Document -> Text Extraction -> Cleaning -> Chunking -> BM25 Index -> Keyword Search -> LLM.
+Hybrid retrieval combines semantic and BM25 scores to improve recall and reduce missed context.
+
+Architecture:
+Input files are processed through a data extraction layer, a cleaning and validation layer, a chunking layer, an embedding generation layer, a retrieval layer, an LLM response generation layer, and an evaluation layer. The original dissertation architecture includes PDF, audio, and video files; the implemented system includes PDF and Excel files per project requirements.
+
+Evaluation Focus:
+The framework evaluates retrieval accuracy, relevance, latency, scalability, answer faithfulness, context relevance, and hallucination risk. The included evaluation script provides lightweight local checks and leaves room for adding RAGAS or DeepEval test sets.
